@@ -1,0 +1,41 @@
+.related-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.related-card {
+  display: flex;
+  max-width: 150px;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 5px;
+  padding: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-image img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.related-card:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 770px) {
+  .related-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .related-card {
+    max-width: 300px;
+  }
+}
